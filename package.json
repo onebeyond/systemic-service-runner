@@ -8,7 +8,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "Systemic"
+    "Systemic",
+    "Service",
+    "Runner"
   ],
   "author": "GuideSmiths Ltd",
   "license": "ISC",
