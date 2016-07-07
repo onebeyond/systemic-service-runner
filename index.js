@@ -8,7 +8,7 @@ module.exports = function(system, options) {
     if (!system) throw new Error('system is required')
 
     var config = merge({ restart: { window: '60s' }}, options)
-    var logger = options.logger || console
+    var logger = options && options.logger || console
 
     function start(cb) {
         system.start(function(err, components) {
