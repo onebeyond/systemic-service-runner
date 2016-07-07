@@ -1,10 +1,10 @@
-# Systemic System Runner
-Starts [systemic](https://github.com/guidesmiths/systemic) systems within a domain
+# Systemic Service Runner
+Starts [systemic](https://github.com/guidesmiths/systemic) systems
 
 ## TL;DR
 ```js
 const Systemic = require('systemic')
-const runner = require('systemic-system-runner')
+const runner = require('systemic-service-runner')
 
 const system = new Systemic()
     .add('config', { foo: 1, bar: 2 })

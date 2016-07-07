@@ -1,5 +1,5 @@
 {
-  "name": "systemic-system-runner",
+  "name": "systemic-service-runner",
   "version": "0.1.0",
   "description": "Starts systemic systems",
   "main": "index.js",
