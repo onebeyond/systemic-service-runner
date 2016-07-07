@@ -18,5 +18,16 @@
   "dependencies": {
     "lodash.merge": "^4.4.0",
     "parse-duration": "^0.1.1"
-  }
+  },
+  "directories": {
+    "example": "example"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guidesmiths/systemic-service-runner.git"
+  },
+  "bugs": {
+    "url": "https://github.com/guidesmiths/systemic-service-runner/issues"
+  },
+  "homepage": "https://github.com/guidesmiths/systemic-service-runner#readme"
 }
