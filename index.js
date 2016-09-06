@@ -9,6 +9,7 @@ module.exports = function(system, options) {
 
     var config = merge({ restart: { window: '60s' }}, options)
     var logger = options && options.logger || console
+    var timeout
 
     function start(cb) {
         system.start(function(err, components) {
@@ -29,8 +30,8 @@ module.exports = function(system, options) {
                 const delay = Math.floor(Math.random() * duration(config.restart.window) / 1000) * 1000
                 logger.info(format('Service will restart in %s seconds.', delay / 1000))
 
-                clearTimeout(scheduleRestart.timeout)
-                scheduleRestart.timeout = setTimeout(function(){
+                clearTimeout(timeout)
+                timeout = setTimeout(function(){
                     system.restart(function(err, components) {
                         if (err) {
                             logger.error('Error restarting system.')
@@ -39,7 +40,7 @@ module.exports = function(system, options) {
                         }
                     })
                 }, delay)
-                scheduleRestart.timeout.unref()
+                timeout.unref()
             }
 
             cb(null, components)
