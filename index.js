@@ -17,6 +17,22 @@ module.exports = function(system, options) {
 
             process.on('systemic_restart', scheduleRestart)
 
+            process.on('error', function(err){
+                logger.error('Unhandled error. Invoking shutdown.')
+                if (err) logger.error(err.stack)
+                system.stop(function() {
+                    process.exit(1)
+                })
+            })
+
+            process.on('unhandledRejection', (err) => {
+                logger.error('Unhandled rejection. Invoking shutdown.')
+                if (err) logger.error(err.stack)
+                system.stop(function() {
+                    process.exit(1)
+                })
+            })
+
             signals.forEach(function(signal) {
                 process.on(signal, function() {
                     logger.info(format('Received %s. Attempting to shutdown gracefully.', signal))

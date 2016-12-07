@@ -17,7 +17,7 @@ runner(system).start((err, components) => {
 })
 ```
 ## Features
-* Attempts to shutdown gracefully on SIGINT and SIGTERM
+* Attempts to shutdown gracefully on error, unhandled rejection, SIGINT and SIGTERM events
 * Attempts a graceful restart when ```process``` emits a ```systemic_restart``` event
 
 ## Usage
