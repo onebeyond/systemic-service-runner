@@ -1,3 +1,5 @@
+[![Build Status](https://img.shields.io/travis/guidesmiths/systemic/master.svg)](https://travis-ci.org/guidesmiths/systemic-service-runner)
+
 # Systemic Service Runner
 Starts [systemic](https://github.com/guidesmiths/systemic) systems
 
