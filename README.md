@@ -36,5 +36,3 @@ runner(<system>, [<options>]).start(<cb>)
     }
 }
 ```
-
-
