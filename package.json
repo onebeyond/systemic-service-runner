@@ -7,7 +7,7 @@
     "example": "node example/runner",
     "test": "mocha",
     "lint": "eslint .",
-    "precommit": "npm run lint"
+    "precommit": "npm run lint && npm run test"
   },
   "keywords": [
     "Systemic",
