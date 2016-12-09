@@ -20,7 +20,6 @@
     "eslint": "^0.23.0",
     "eslint-config-imperative": "0.0.6",
     "eslint-plugin-imperative": "0.0.2",
-    "eslint-plugin-mocha": "^4.0.0",
     "husky": "^0.11.9",
     "mocha": "^3.2.0",
     "systemic": "^0.1.3"
