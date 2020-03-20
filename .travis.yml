@@ -6,4 +6,17 @@ node_js:
 install:
   - npm install
 test:
+  - npm run lint
   - npm run test
+
+jobs:
+  include:
+  - stage: npm Deployment
+    deploy:
+      edge: true
+      provider: npm
+      skip_cleanup: true
+      email: "$NPM_EMAIL"
+      api_key: "$NPM_TOKEN"
+      on:
+        tags: true
