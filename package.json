@@ -17,15 +17,15 @@
   "author": "GuideSmiths Ltd",
   "license": "ISC",
   "devDependencies": {
-    "eslint": "^6.7.2",
+    "eslint": "6.7.2",
     "eslint-config-imperative": "3.0.0",
     "eslint-plugin-imperative": "3.0.0",
-    "husky": "^3.1.0",
-    "mocha": "^6.2.2",
-    "systemic": "^3.3.0"
+    "husky": "3.1.0",
+    "mocha": "6.2.2",
+    "systemic": "3.3.0"
   },
   "dependencies": {
-    "parse-duration": "^0.1.2"
+    "parse-duration": "0.1.2"
   },
   "directories": {
     "example": "example"
