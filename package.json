@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "example": "node example/runner",
-    "test": "zunit",
+    "test": "node test",
     "lint": "eslint .",
     "prepare": "husky install",
-    "coverage": "nyc --report html --reporter lcov --reporter text-summary npm test"
+    "coverage": "nyc --report html --reporter lcov --reporter text-summary node test"
   },
   "keywords": [
     "Systemic",
@@ -44,8 +44,5 @@
   "bugs": {
     "url": "https://github.com/guidesmiths/systemic-service-runner/issues"
   },
-  "homepage": "https://github.com/guidesmiths/systemic-service-runner#readme",
-  "zUnit": {
-    "pollute": true
-  }
+  "homepage": "https://github.com/guidesmiths/systemic-service-runner#readme"
 }
