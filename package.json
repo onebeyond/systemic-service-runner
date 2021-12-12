@@ -7,7 +7,6 @@
     "example": "node example/runner",
     "test": "mocha",
     "lint": "eslint .",
-    "lint:fix": "eslint --fix .",
     "prepare": "husky install"
   },
   "keywords": [
