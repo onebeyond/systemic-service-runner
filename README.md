@@ -1,4 +1,11 @@
-[![Build Status](https://img.shields.io/travis/guidesmiths/systemic-service-runner/master.svg)](https://travis-ci.org/guidesmiths/systemic-service-runner)
+[![NPM version](https://img.shields.io/npm/v/systemic-service-runner.svg?style=flat-square)](https://www.npmjs.com/package/systemic-service-runner)
+[![NPM downloads](https://img.shields.io/npm/dm/systemic-service-runner.svg?style=flat-square)](https://www.npmjs.com/package/systemic-service-runner)
+[![Node.js CI](https://github.com/guidesmiths/systemic-service-runner/workflows/Node.js%20CI/badge.svg)](https://github.com/guidesmiths/systemic-service-runner/actions?query=workflow%3A%22Node.js+CI%22)
+[![Code Climate](https://codeclimate.com/github/guidesmiths/systemic-service-runner/badges/gpa.svg)](https://codeclimate.com/github/guidesmiths/systemic-service-runner)
+[![Test Coverage](https://codeclimate.com/github/guidesmiths/systemic-service-runner/badges/coverage.svg)](https://codeclimate.com/github/guidesmiths/systemic-service-runner/coverage)
+[![Code Style](https://img.shields.io/badge/code%20style-prettier-brightgreen.svg)](https://github.com/prettier/prettier)
+[![systemic-service-runner](https://snyk.io/advisor/npm-package/systemic-service-runner/badge.svg)](https://snyk.io/advisor/npm-package/systemic-service-runner)
+[![Discover zUnit](https://img.shields.io/badge/Discover-zUnit-brightgreen)](https://www.npmjs.com/package/zunit)
 
 # Systemic Service Runner
 
