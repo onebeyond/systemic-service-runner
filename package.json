@@ -29,7 +29,7 @@
     "zunit": "^3.2.1"
   },
   "dependencies": {
-    "parse-duration": "0.1.2"
+    "parse-duration": "^1.0.2"
   },
   "directories": {
     "example": "example"
