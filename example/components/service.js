@@ -1,14 +1,14 @@
 module.exports = () => {
+  const start = async (dependencies) => {
+    console.log('Starting service with configuration', dependencies);
+  };
 
-    const start = async (dependencies) => {
-        console.log('Starting service with configuration', dependencies)
-    }
+  const stop = async () => {
+    console.log('Stopping service');
+  };
 
-    const stop = async () => {
-        console.log('Stopping service')
-    }
-
-    return {
-        start, stop
-    }
-}
+  return {
+    start,
+    stop,
+  };
+};

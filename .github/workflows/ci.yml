@@ -2,9 +2,9 @@ name: CI
 
 on:
   push:
-    branches: [ master ]
+    branches: [master]
   pull_request:
-    branches: [ master ]
+    branches: [master]
 
 jobs:
   build:
@@ -13,13 +13,13 @@ jobs:
       matrix:
         node-version: [8.x, 10.x, 12.x, 14.x]
     steps:
-    - uses: actions/checkout@v2
-    - name: Set up Node.js version ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
+      - uses: actions/checkout@v2
+      - name: Set up Node.js version ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
 
-    - run: npm install
-    - run: npm run lint
-    - run: npm run test
+      - run: npm install
+      - run: npm run lint
+      - run: npm run test
