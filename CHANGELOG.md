@@ -2,3 +2,4 @@
 
 - Introduce prettier
 - Update github actions
+- Replace mocha with zUnit

@@ -15,21 +15,21 @@ describe('systemic service runner', () => {
     process.exit = exit;
   });
 
-  it('should start a system', (done) => {
+  it('should start a system', (t, done) => {
     runner(system).start(() => {
       assert(system.started);
       done();
     });
   });
 
-  it('should stop a system', (done) => {
+  it('should stop a system', (t, done) => {
     runner(system).stop(() => {
       assert(system.stopped);
       done();
     });
   });
 
-  it('should stop on unhandled error', (done) => {
+  it('should stop on unhandled error', (t, done) => {
     process.exit = (code) => {
       assert(system.stopped);
       assert.equal(code, 1);
@@ -44,7 +44,7 @@ describe('systemic service runner', () => {
     });
   });
 
-  it('should stop on unhandled rejection', (done) => {
+  it('should stop on unhandled rejection', (t, done) => {
     process.exit = (code) => {
       assert(system.stopped);
       assert.equal(code, 1);
@@ -59,7 +59,7 @@ describe('systemic service runner', () => {
     });
   });
 
-  it('should stop on SIGINT', (done) => {
+  it('should stop on SIGINT', (t, done) => {
     process.exit = (code) => {
       assert(system.stopped);
       assert.equal(code, 0);
@@ -74,7 +74,7 @@ describe('systemic service runner', () => {
     });
   });
 
-  it('should stop on SIGTERM', (done) => {
+  it('should stop on SIGTERM', (t, done) => {
     process.exit = (code) => {
       assert(system.stopped);
       assert.equal(code, 0);
