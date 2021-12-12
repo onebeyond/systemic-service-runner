@@ -7,7 +7,8 @@
     "example": "node example/runner",
     "test": "zunit",
     "lint": "eslint .",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "coverage": "nyc --report html --reporter lcov --reporter text-summary npm test"
   },
   "keywords": [
     "Systemic",
@@ -22,6 +23,7 @@
     "eslint-plugin-prettier": "^4.0.0",
     "husky": "^7.0.4",
     "lint-staged": "^12.1.2",
+    "nyc": "^15.1.0",
     "prettier": "2.5.1",
     "systemic": "^3.3.10",
     "zunit": "^3.2.1"
