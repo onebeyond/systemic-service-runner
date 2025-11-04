@@ -12,4 +12,4 @@ type Runner<T extends Record<string, unknown>> = {
  */
 declare function runner<T extends Record<string, unknown>>(system: Systemic<T>, options?: { restart?: { window: string }; logger?: any }): Runner<T>;
 
-export default runner;
+export = runner;
